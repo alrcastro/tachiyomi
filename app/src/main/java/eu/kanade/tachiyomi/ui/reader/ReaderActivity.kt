@@ -247,6 +247,9 @@ class ReaderActivity : BaseRxActivity<ReaderActivityBinding, ReaderPresenter>() 
 
                 sheet.show()
             }
+            R.id.action_accessibility -> {
+                toggleAccessibility()
+            }
         }
         return super.onOptionsItemSelected(item)
     }
@@ -286,6 +289,12 @@ class ReaderActivity : BaseRxActivity<ReaderActivityBinding, ReaderPresenter>() 
     override fun dispatchGenericMotionEvent(event: MotionEvent): Boolean {
         val handled = viewer?.handleGenericMotionEvent(event) ?: false
         return handled || super.dispatchGenericMotionEvent(event)
+    }
+
+    private fun toggleAccessibility() {
+        binding.accessibilityCanvas.visibility = View.VISIBLE
+
+        // binding.accessibilityCanvas.createItens()
     }
 
     /**

@@ -119,6 +119,7 @@
     <string name="action_webview_back">Back</string>
     <string name="action_webview_forward">Forward</string>
     <string name="action_webview_refresh">Refresh</string>
+    <string name="action_accessibility">Accessibility</string>
 
     <!-- Operations -->
     <string name="loading">Loading…</string>

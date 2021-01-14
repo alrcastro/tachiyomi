@@ -30,4 +30,10 @@
         app:iconTint="?attr/colorOnPrimary"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/action_accessibility"
+        android:icon="@drawable/border_circle"
+        android:title="@string/action_accessibility"
+        app:showAsAction="always" />
+
 </menu>
